@@ -12,7 +12,6 @@ if (!WEATHER_API_URL) {
   throw new Error('Weather API URL not found.');
 }
 
-
 const useWeatherData = () => {
   const currentTemp = ref(0);
   const currentIcon = ref('');

@@ -2,7 +2,7 @@
 import { usePreferredCitiesStore } from '@/stores/preferredCities'
 import Autocomplete from '@/components/ui/Autocomplete.vue'
 import PreferredCitiesList from '@/components/preferredCities/PreferredCitiesList.vue'
-import WetherForecast from '@/components/wether/WetherForecast.vue'
+import WeatherForecast from '@/components/weather/WeatherForecast.vue'
 
 const citiesStore = usePreferredCitiesStore()
 
@@ -13,10 +13,12 @@ const addPreferredCity = (city) => {
 
 <template>
   <main class="container mt-10">
-    <div class="flex gap-6 px-6">
-      <PreferredCitiesList />
-      <Autocomplete @select="addPreferredCity" />
+    <div class="px-6">
+      <div class="flex gap-6 shadow-box p-4">
+        <PreferredCitiesList />
+        <Autocomplete @select="addPreferredCity" />
+      </div>
     </div>
-    <WetherForecast />
+    <WeatherForecast />
   </main>
 </template>

@@ -35,7 +35,6 @@ const onInputChange = (e) => {
         })
       } else {
         predictions.value = []
-        console.log(status)
       }
     })
   } else {

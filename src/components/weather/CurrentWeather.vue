@@ -13,7 +13,7 @@ const props = defineProps({
 })
 
 const iconUrl = computed(() => {
-  return `https://openweathermap.org/img/wn/${props.currentIcon}.png`
+  return props.currentIcon ? `https://openweathermap.org/img/wn/${props.currentIcon}.png` : '#'
 })
 </script>
 
