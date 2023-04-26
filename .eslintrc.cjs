@@ -12,6 +12,9 @@ module.exports = {
     "browser": true,
     "node": true
   },
+  "rules": {
+    "vue/multi-word-component-names": 0
+  },
   parserOptions: {
     ecmaVersion: 'latest'
   },
